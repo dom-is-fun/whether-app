@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background:url(../img/hot.png) no-repeat center/cover */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(../img/hot.png) no-repeat center/cover;
+}
+
+.box-weather {
+    height: 600px;
+    min-width: 350px;
+    background: url(../img/hot.png) no-repeat center/cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 43px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.name-place{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.name-place input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    padding-left: 12px;
+    font-size: 16px;
+    color: black;
+    transition: all 0.5s;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.name-place input:focus{
+    opacity: 1;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.infor-of-place{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.infor-of-place h2 {
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px rgb(0 0 0 / 50%);
+}
+
+.infor-of-place p {
+    color: white;
+    font-size: 16px;
+}
+
+.poison{
+    padding: 12px;
+    height: 130px;
+    width: 57% max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    border-radius: 8px;
+    box-shadow: 2px 2px rgb(0 0 0 / 50%);
+    background-color: rgba(255, 255, 255, 0.4);
+    text-shadow: 2px 2px rgb(0 0 0 / 80%);
+}
+
+.poison span{
+    font-size: 50px;
+    font-weight: 1000;
+    color: white;
+}
+
+.poison span:nth-child(2){
+    display: flex;
+    position: relative;
+}
+
+.poison span:nth-child(2) sup{
+    font-size: 35px;
+}
+
+.clould{
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px rgb(0 0 0 / 50%);
+}
+
+.infor-win-sun{
+    display: flex;
+    width: 100%;
+    height: 54px;
+    justify-content: space-around;
+}
+
+.infor-win-sun span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(236, 236, 236);
+}
